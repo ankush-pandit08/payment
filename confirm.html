@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Confirmation</title>
+ 
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .card strong {
+      color: #000;
+    }
+
+    .amount {
+      font-size: 24px;
+      font-weight: bold;
+      color: #27ae60;
+      margin-bottom: 20px;
+    }
+
+    .completed {
+      text-align: center;
+      background-color: #e6ffed;
+      border: 1px solid #27ae60;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .completed h2 {
+      color: #27ae60;
+      margin-bottom: 10px;
+    }
+
+    .completed p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .footer img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer a {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Card -->
+    <div class="card">
+      <h2>Payment Request from Manba Wortgage Finance</h2>
+      <p><strong>Payment For:</strong> Dear Shaikh Imran Habib, Wortagage Finance Limited has requested payment of ₹1,34,500.00. You can pay through this link:</p>
+      <p class="amount">INR 1,34,500.00</p>
+      <p>For any queries, please contact <strong>Wortagage Finance Limited</strong></p>
+      <p>📞 18602669989 | ✉️ info@wortgage.com</p>
+    </div>
+
+    <!-- Right Card -->
+    <div class="card completed">
+      <h2>Payment Completed</h2>
+      <p>You have successfully paid <strong>INR 1,34,500.00</strong></p>
+      <p>Payment ID: HBTAZL0nu16ZHY</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>
+      <img src="razorpay.png" alt="Razorpay Logo">
+      <span>Want to create payment links for your business? Visit <a href="#">razorpay.com/payment-links</a></span>
+    </div>
+    <a href="#">Report Payment Link</a>
+  </div>
+</body>
+</html>
